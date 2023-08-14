@@ -1,153 +1,130 @@
-div.header {
-  height: 55px;
-  background: linear-gradient(to right, rgb(177, 127, 181), rgb(128, 189, 189), rgb(255, 243, 207));
+.AppHeader-globalBar,
+.AppHeader-localBar {
+  background: linear-gradient(
+    -45deg,
+    rgb(253, 235, 255),
+    rgb(255, 243, 207),
+    rgb(165, 255, 255)
+  );
+  background-size: 400% 400%;
+  -webkit-animation: gradient 18s ease infinite;
+  animation: gradient 18s ease infinite;
 }
 
-
-.octicon-file-directory {
-  color: #67c3ba !important;
+.Button--primary,
+[class*="ButtonPrimary"] {
+  background-image: linear-gradient(
+    -180deg,
+    #c32dd6 0%,
+    #8a1d9c 90%
+  ) !important;
+  background-color: #8e1f9c !important;
 }
 
-.notification-indicator .mail-status {
-  border: 0px !important;
+/* Commit Changes Button */
+.dodsdL {
+  background-image: linear-gradient(
+    -180deg,
+    #6e137a 0%,
+    #440a4e 90%
+  ) !important;
+  background-color: #610e6c !important;
 }
 
-.header-search-scope {
-  border-right: 1px solid #f1e8e7 !important;
-}
+@media (prefers-color-scheme: dark) {
+  .AppHeader-globalBar,
+  .AppHeader-localBar {
+    background: linear-gradient(
+      -45deg,
+      rgb(37, 4, 41),
+      rgb(49, 39, 5),
+      rgb(4, 49, 49)
+    );
+    background-size: 400% 400%; 
+    -webkit-animation: gradient 18s ease infinite;
+    animation: gradient 18s ease infinite;
+  }
 
-.header-nav-link {
-  color: white !important;
+  .Button--primary {
+    background-image: linear-gradient(
+      -180deg,
+      #6e137a 0%,
+      #440a4e 90%
+    ) !important;
+    background-color: #610e6c !important;
+  }
 }
-
-span.counter {
-  background-color: white;
-}
-
-.timeline-comment-avatar {
-  border-radius: 50% !important;
-}
-
-.timeline-commits .commit-message > code a {
-  font-size: 10pt !important;
-}
-
-.header-search-scope {
-  color: white !important;
-}
-
 
 .reponav-item.selected {
   border-color: #f3a3de #e5e5e5 transparent !important;
 }
 
 .comment-form-head {
-  background: linear-gradient(to right, rgb(253, 235, 255), rgb(255, 243, 207), rgb(165, 255, 255)) !important;
+  background: linear-gradient(
+    to right,
+    rgb(253, 235, 255),
+    rgb(255, 243, 207),
+    rgb(165, 255, 255)
+  ) !important;
   -webkit-animation: rainbow 18s ease infinite;
-  -z-animation: rainbow 18s ease infinite;
-  -o-animation: rainbow 18s ease infinite;
   animation: rainbow 18s ease infinite;
   background-size: 240% 240%;
 }
 
 .boxed-group > h3 {
-  background: linear-gradient(to right, rgb(177, 127, 181), rgb(128, 189, 189), rgb(255, 243, 207));
+  background: linear-gradient(
+    to right,
+    rgb(177, 127, 181),
+    rgb(128, 189, 189),
+    rgb(255, 243, 207)
+  );
   color: white;
 }
 
-.private .mini-repo-list-item {
-  background-color: #fdf7ff !important;
-}
-
-.boxed-group .counter {
-  background-color: white !important;
-  color: black !important;
-}
-
-.timeline-comment-header {
-  background: linear-gradient(to right, rgb(253, 235, 255), rgb(255, 243, 207), rgb(165, 255, 255));
-  -webkit-animation: rainbow 18s ease infinite;
-  -z-animation: rainbow 18s ease infinite;
-  -o-animation: rainbow 18s ease infinite;
-  animation: rainbow 18s ease infinite;
-  background-size: 240% 240%;
-}
-
 .file-header {
-  background: linear-gradient(to right, rgb(253, 235, 255), rgb(255, 243, 207), rgb(165, 255, 255));
+  background: linear-gradient(
+    to right,
+    rgb(253, 235, 255),
+    rgb(255, 243, 207),
+    rgb(165, 255, 255)
+  );
   -webkit-animation: rainbow 18s ease infinite;
-  -z-animation: rainbow 18s ease infinite;
-  -o-animation: rainbow 18s ease infinite;
   animation: rainbow 18s ease infinite;
   background-size: 240% 240%;
-}
-
-.btn-primary {
-  background-image: linear-gradient(-180deg, #c32dd6 0%, #8a1d9c 90%) !important;
-  background-color: #8e1f9c !important;
-}
-
-.js-navigation-open {
-  color: black;
-}
-
-.list-topics-container a {
-  background-color: white;
-  color: black;
 }
 
 .commit-tease {
-  background: linear-gradient(to right, rgb(253, 235, 255), rgb(255, 243, 207), rgb(165, 255, 255));
+  background: linear-gradient(
+    to right,
+    rgb(253, 235, 255),
+    rgb(255, 243, 207),
+    rgb(165, 255, 255)
+  );
   -webkit-animation: rainbow 18s ease infinite;
-  -z-animation: rainbow 18s ease infinite;
-  -o-animation: rainbow 18s ease infinite;
   animation: rainbow 18s ease infinite;
   background-size: 240% 240%;
 }
 
-.pagehead {
-  background: linear-gradient(to right, rgb(253, 235, 255), rgb(255, 243, 207), rgb(165, 255, 255));
-  -webkit-animation: rainbow 18s ease infinite;
-  -z-animation: rainbow 18s ease infinite;
-  -o-animation: rainbow 18s ease infinite;
-  animation: rainbow 18s ease infinite;
-  background-size: 240% 240%;
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.reponav-item {
-  color: black !important;
-}
-
-.reponav-item svg {
-  color: black !important;
-}
-
-.table-list-header {
-  background: linear-gradient(to right, rgb(253, 235, 255), rgb(255, 243, 207), rgb(165, 255, 255));
-  -webkit-animation: rainbow 18s ease infinite;
-  -z-animation: rainbow 18s ease infinite;
-  -o-animation: rainbow 18s ease infinite;
-  animation: rainbow 18s ease infinite;
-  background-size: 240% 240%;
-}
-
-@-webkit-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@-moz-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@-o-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
